@@ -52,13 +52,13 @@ section.intro {
 }
 section.intro h2 {
   color: #ffffff;
-  font-size: 3em;
-  font-weight: 600;
+  font-size: 2em;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 section.intro p {
   color: #ffffff;
-  font-size: 1.5em;
+  font-size: 1.0em;
   margin-bottom: 30px; 
 }
 
@@ -247,7 +247,7 @@ footer {
 /* Testing introductory text */
 .intro-text {
   text-align: center;
-  margin: 20px 20px;
+  margin: 40px 20px;
   font-size: 1.2em;
 }
 .intro-text h2 {
