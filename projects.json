@@ -22,8 +22,8 @@
     "status": "Available"
   },
     {
-    "name": "Orphan Processes",
-    "repository": "Orpahn_Processes",
+    "name": "Processes",
+    "repository": "Processes",
     "link": "https://github.com/Nihanya05/kubespray",
     "description": "Automation for cleaning up orphan processes.",
     "aap": "Yes",
