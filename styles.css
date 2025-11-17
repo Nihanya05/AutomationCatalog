@@ -248,15 +248,15 @@ footer {
 .intro-text {
   text-align: center;
   margin: 40px 20px;
-  font-size: 1.2em;
+  font-size: 1.0em;
 }
 .intro-text h2 {
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: #333;
   margin-bottom: 10px;
 }
 .intro-text p {
-  font-size: 1.1em;
+  font-size: 1.0em;
   color: #555;
   margin-bottom: 30px;
 }
