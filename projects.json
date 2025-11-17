@@ -20,6 +20,17 @@
     "developer": "Gangadhar babu Singamala",
     "js": "Yes",
     "status": "Available"
+  },
+    {
+    "name": "Orphan Processes",
+    "repository": "Orpahn_Processes",
+    "link": "https://github.com/Nihanya05/terraform-aws-firstproject",
+    "description": "Automation for cleaning up orphan processes.",
+    "aap": "Yes",
+    "os": "Linux",
+    "developer": "Hari",
+    "js": "Yes",
+    "status": "Available"
   }
 
 ]
