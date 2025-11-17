@@ -24,7 +24,7 @@
     {
     "name": "Orphan Processes",
     "repository": "Orpahn_Processes",
-    "link": "https://github.com/Nihanya05/terraform-aws-firstproject",
+    "link": "https://github.com/Nihanya05/kubespray",
     "description": "Automation for cleaning up orphan processes.",
     "aap": "Yes",
     "os": "Linux",
