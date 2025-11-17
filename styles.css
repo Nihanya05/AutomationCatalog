@@ -53,12 +53,12 @@ section.intro {
 section.intro h2 {
   color: #ffffff;
   font-size: 2em;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 20px;
 }
 section.intro p {
   color: #ffffff;
-  font-size: 1.0em;
+  font-size: 0.5em;
   margin-bottom: 30px; 
 }
 
