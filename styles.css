@@ -17,7 +17,7 @@ header {
   display: flex;
   flex-wrap: wrap; /* Enables responsiveness to the site */
   justify-content: center;
-  padding: 4px 20px;
+  padding: 4px 10px;
   border-bottom: 1px solid #393939;
 }
 header img {
