@@ -74,7 +74,7 @@ section.catalogue-section {
 .search-container {
   display: flex;
   justify-content: center;
-  margin: 30px;
+  margin: 20px;
 }
 .search-input {
   border-radius: 5px;
