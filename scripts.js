@@ -54,20 +54,6 @@ fetch('projects.json')
       /* Add a new card to the container */
       catalogue.appendChild(card);
     });
-    const developer = card.dataset.developer.toLowerCase();
-	if (
-  name.includes(query) ||
-  repository.includes(query) ||
-  link.includes(query) ||
-  aap.includes(query) ||
-  os.includes(query) ||
-  developer.includes(query)
-) {
-  card.style.display = 'block';
-  resultsFound = true;
-} else {
-  card.style.display = 'none';
-}
 
     /* Function - Searching cards by 'name', 'project', 'link', 'github', & 'available' */
     const searchInput = document.getElementById('searchBar');
@@ -75,6 +61,7 @@ fetch('projects.json')
 
     searchInput.addEventListener('input', function() {
       const query = searchInput.value.toLowerCase();
+	  
 
       let resultsFound = false;
 
@@ -84,8 +71,9 @@ fetch('projects.json')
         const link = card.dataset.link.toLowerCase();
         const aap = card.dataset.aap.toLowerCase();
         const os = card.dataset.os.toLowerCase();
+		const developer = card.dataset.developer.toLowerCase();
 
-        if (name.includes(query) || repository.includes(query) || link.includes(query) || aap.includes(query) || os.includes(query)) {
+        if (name.includes(query) || repository.includes(query) || link.includes(query) || aap.includes(query) || os.includes(query) || developer.includes(query)){
           card.style.display = 'block';
           resultsFound = true;
         } else {
