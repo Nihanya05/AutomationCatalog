@@ -19,6 +19,8 @@ fetch('projects.json')
       card.setAttribute("data-aap", project.aap);
       card.setAttribute("data-os", project.os);
       card.setAttribute("data-js", project.js);
+	  card.setAttribute("data-developer", project.developer);
+
       
       const jsIcon = project.js === "Yes"
       ? ` <img src="images/bare-metal-server.svg" alt="Icon" class="icon">`
@@ -52,6 +54,20 @@ fetch('projects.json')
       /* Add a new card to the container */
       catalogue.appendChild(card);
     });
+    const developer = card.dataset.developer.toLowerCase();
+	if (
+  name.includes(query) ||
+  repository.includes(query) ||
+  link.includes(query) ||
+  aap.includes(query) ||
+  os.includes(query) ||
+  developer.includes(query)
+) {
+  card.style.display = 'block';
+  resultsFound = true;
+} else {
+  card.style.display = 'none';
+}
 
     /* Function - Searching cards by 'name', 'project', 'link', 'github', & 'available' */
     const searchInput = document.getElementById('searchBar');
