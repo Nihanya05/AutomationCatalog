@@ -74,7 +74,7 @@ section.catalogue-section {
 .search-container {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: 30px;
 }
 .search-input {
   border-radius: 5px;
@@ -251,7 +251,7 @@ footer {
   font-size: 1.2em;
 }
 .intro-text h2 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: #333;
   margin-bottom: 10px;
 }
