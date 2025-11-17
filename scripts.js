@@ -36,7 +36,6 @@ fetch('projects.json')
     /* Filling cards with datasets... */
     card.innerHTML = `
       <h3>${project.name}</h3>
-      <p class="hide-on-description"><strong>Asset Class:</strong> ${project.assetclass}</p>
       <p class="description">${project.description}</p>
       <div class="icon-container">
         ${jsIcon}
