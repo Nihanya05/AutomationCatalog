@@ -1,0 +1,262 @@
+/* Here are defined all the CSS styles for the site */
+body {
+  background-color: #f4f7fa;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh; /* Adjust the body to full the whole window */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styles for header */
+header {
+  align-items: center;
+  background-color: #161616;
+  display: flex;
+  flex-wrap: wrap; /* Enables responsiveness to the site */
+  justify-content: center;
+  padding: 4px 20px;
+  border-bottom: 1px solid #393939;
+}
+header img {
+  height: 40px; /* Logo responsiveness */
+  margin-right: 20px;
+}
+header button {
+  margin-left: 20px;
+}
+.header-title {
+  color: #ffffff;
+  flex-grow: 1; /* Keeps the tittle centered */
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* Styles for main */
+main {
+  flex-grow; /* Main content full the whole available space between the header and footer */
+}
+
+/* Styles for section */
+section.intro {
+  background-color: #000000;
+  box-sizing: border-box;
+  color: #333;
+  margin-bottom: 0;
+  padding: 90px 20px;
+  text-align: center;
+  transition: background-color: 0.5s ease;
+  width: 100%;
+}
+section.intro h2 {
+  color: #ffffff;
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+section.intro p {
+  color: #ffffff;
+  font-size: 1.5em;
+  margin-bottom: 30px; 
+}
+
+/* Styles for 'Catalog & Search' section */
+section.catalogue-section {
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+.search-input {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  max-width: 600px;
+  padding: 10px;
+  width: 80%;
+}
+.catalogue {
+  display: flex;
+  flex-wrap: wrap; /* Allows to card adjust in multiple lines */
+  justify-content: center;
+  margin: 0 20px;
+}
+.card {
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin: .5px;
+  overflow: hidden;
+  padding: 10px;
+  padding-bottom: 70px;
+  position: relative;
+  text-align: left;
+  transition: transform 0.2s, background-color 0.3s, color 0.3s;
+  width: 285px;
+}
+.card:hover {
+  transform: translateY(-10px);
+  background-color: rgba(0, 0, 0, 0.05); /* Darker the card */
+}
+.card h3 {
+  color: #000000;
+  font-size: 1em;
+  margin-top: 5px 0;
+  margin-left: 7px;
+  text-align: left; 
+}
+.card p {
+  color: #161616;
+  font-size: 0.9em;
+  margin: 5px 0;
+  margin-left: 7px;
+  text-align: left;
+}
+.card a {
+  color: #0f62fe;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: left;
+}
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Hidden description by default */
+.card .description {
+  color: #262626;
+  display: none;
+  font-size: 0.8em;
+  margin-top: 10px;
+  text-align: left;
+  justify-content: center;
+}
+
+/* Modify style to hide the text when the description displays */
+.card .hide-on-description {
+  display: block; /* Shows by default */
+}
+
+.card:hover .hide-on-description {
+  display: none; /* Hides when hover on card */
+}
+
+/* When mouse hover the card, it'll show the description */
+.card:hover .description {
+  display: block;
+}
+
+.card .icon-container {
+  bottom: 15px;
+/*  color: #161616; */
+/*  font-size: 1.5em; */
+  left: 15px;
+  position: absolute;
+}
+
+.card .icon-container img {
+  color: #262626;
+  height: 24px;
+  width: 24px;
+}
+
+.card .bottom-right-icon {
+  bottom: 15px;
+  position: absolute;
+  right: 15px;
+}
+
+.card .bottom-right-icon img {
+  width: 24px;
+  height: 24px;
+  filter: invert(26%) sepia(92%) saturate(2473%) hue-rotate(215deg) brightness(98%) contrast(108%);
+}
+
+.no-results {
+  text-align: center;
+  width: 100%;
+  font-size: 1em;
+  color: #161616;
+}
+
+/* Media queries for responsiveness */
+@media (max-width:768px) {
+  .catalogue {
+    justify-content: flex-start; /* Align cards to the left size on smaller screens */
+  }
+  .card {
+    margin: 10px 0;
+    width: 100%; /* Cards full the whole screen */
+  }
+  .header-title {
+    font-size: 1.2em; /* Reduce tittle size on smaller screens */
+  }
+  .search-input {
+    width: 90%; /* Resize search field */
+  }
+}
+
+/* Dark side force */
+body.dark-mode {
+  background-color: #333;
+  color: #f4f7fa;
+}
+header.dark-mode {
+  background-color: #222;
+}
+.card.dark-mode {
+  background-color: #444;
+  color: #f4f7fa;
+}
+.card.dark-mode a {
+  color: #80e27e;
+}
+.search-input.dark-mode {
+  background-color: #555;
+  border: 1px solid #777;
+  color: #f4f7fa;
+}
+.search-input.dark-mode::placeholder {
+  color: #bbb;
+}
+.no-results.dark-mode {
+  color: #bbb;
+}
+
+/* Styles for 'Footer' */
+footer {
+  background-color: #161616;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 1em;
+  margin-top: 0;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Testing introductory text */
+.intro-text {
+  text-align: center;
+  margin: 40px 20px;
+  font-size: 1.2em;
+}
+.intro-text h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 10px;
+}
+.intro-text p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 30px;
+}

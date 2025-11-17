@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Automation Catalog",
+    "repository": "Automation Catalog",
+    "link": "https://github.com/Nihanya05/AutomationCatalog",
+    "description": "Single access point to reach everything related to the available automations developed by the CIS team.",
+    "aap": "yes",
+    "os": "N/A",
+    "developer": "Gangadhar babu Singamala", 
+    "js": "Yes",
+    "status": "Available"
+  },
+  {
+    "name": "Orphan Processes",
+    "repository": "Orpahn_Processes",
+    "link": "https://github.com/Nihanya05/terraform-aws-firstproject",
+    "description": "Automation for cleaning up orphan processes.",
+    "aap": "Yes",
+    "os": "Linux",
+    "developer": "Gangadhar babu Singamala",
+    "js": "Yes",
+    "status": "Available"
+  }
+
+]

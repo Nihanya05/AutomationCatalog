@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.8">
+  <title>CIS - Automation Catalog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="logo.png" alt="LTIMindtree">
+    <span class="header-title"></span>
+    <button id="themeToggle">⏾</button>
+  </header>
+  
+  <main>
+    <!-- Intro section -->
+    <section class="intro">
+      <h2>CIS - Automation Catalog</h2>
+      <p>This catalog has been developed to help the team members to have a single access point to reach everything related to the automations available. The automations have been developed with multiple programming and markup languages: Bash Scripting, HTML, JavaScript, Jinja, Json, Python, XML, etc. Each automation is being migrated to AAP (Ansible Automation Platform).</p>
+    </section>
+  
+    <!-- Search & Catalog section -->
+    <section class="catalogue-section">
+      <div class="search-container">
+        <input type="text" id="searchBar" class="search-input" placeholder="Search by Asset Class, Name, Author, or Link...">
+      </div>
+      <div id="catalogue" class="catalogue"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© CIS Team. Automation Catalog</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+</body>
+</html>
