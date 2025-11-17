@@ -39,6 +39,7 @@ fetch('projects.json')
     card.innerHTML = `
       <h3>${project.name}</h3>
       <p class="description">${project.description}</p>
+	  <p class="developer">👨‍💻 Developer: ${project.developer}</p>
       <div class="icon-container">
         ${jsIcon}
         ${aapIcon}
