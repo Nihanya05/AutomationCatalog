@@ -1,6 +1,6 @@
 /* Here are defined all the CSS styles for the site */
 body {
-  background-color: #f4f7fa;
+  background-color: #FFEFD5;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@ main {
 
 /* Styles for section */
 section.intro {
-  background-color: #A9A9A9;
+  background-color: #E0FFFF;
   box-sizing: border-box;
   color: #333;
   margin-bottom: 0;
