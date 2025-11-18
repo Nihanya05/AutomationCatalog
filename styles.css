@@ -13,7 +13,7 @@ body {
 /* Styles for header */
 header {
   align-items: center;
-  background-color: #8FBC8F;
+  background-color: #FFC0CB;
   display: flex;
   flex-wrap: wrap; /* Enables responsiveness to the site */
   justify-content: center;
