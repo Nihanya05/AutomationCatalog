@@ -13,7 +13,7 @@ body {
 /* Styles for header */
 header {
   align-items: center;
-  background-color: #161616;
+  background-color: #8FBC8F;
   display: flex;
   flex-wrap: wrap; /* Enables responsiveness to the site */
   justify-content: center;
@@ -108,7 +108,7 @@ section.catalogue-section {
   background-color: rgba(0, 0, 0, 0.05); /* Darker the card */
 }
 .card h3 {
-  color: #FFEBCD;
+  color: #000000;
   font-size: 1em;
   margin-top: 5px 0;
   margin-left: 7px;
